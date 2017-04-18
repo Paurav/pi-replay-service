@@ -30,7 +30,7 @@ namespace PIReplay.CommandLine
 
         public class InvalidParameterException : Exception
         {
-            public InvalidParameterException(string parameter = null, string message=null) : base($"The provided parameter is invalid {parameter}. {message}") { }
+            public InvalidParameterException(string parameter = null, string message=null) : base("The provided parameter is invalid {parameter}. {message}") { }
         }
     }
 }

@@ -109,8 +109,8 @@ namespace PIReplay.Core
 
             _cancellationTokenSource.Cancel();
 
-            _dataReader?.Stop();
-            _dataWriter?.Stop();
+            _dataReader.Stop();
+            _dataWriter.Stop();
 
             _logger.Info("Waiting for tasks to complete...");
             _mainTask.Wait(15000);

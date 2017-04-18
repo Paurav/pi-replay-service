@@ -24,7 +24,7 @@ namespace PIReplay.Core
 {
     public class PIPointsProvider
     {
-        public IEnumerable<PIPoint> Points { get; set; } = null;
+        public IEnumerable<PIPoint> Points { get; set; }
 
 
         public PIPointsProvider(string query, PIServer server)
